@@ -1,0 +1,11 @@
+{
+    "authenticationResult": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzI1MDExNjIsInBvb2xfaWQiOiJ0ZXN0LXBvb2xpZCIsInVzZXJfaWQiOjF9.zlBEl1RA_4StCz86n5lsyk1j-0EDn_8jst0RdjA_Uf4",
+        "expiresAtSec": "1532501162",
+        "refreshToken": "556d1796-519e-4f5f-b099-4f186ca16580",
+        "login": "1",
+        "nick": "",
+        "avatar": "https://google.com",
+        "isNewRegister": false
+    }
+}

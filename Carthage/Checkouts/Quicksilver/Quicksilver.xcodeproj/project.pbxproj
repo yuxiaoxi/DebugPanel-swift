@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3449F3B4215B27F90018F0BA /* URLDownloadableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449F3B3215B27F90018F0BA /* URLDownloadableTests.swift */; };
+		34A780BF2154ADBB00D17959 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780BE2154ADBB00D17959 /* TargetType.swift */; };
+		34A780C12154ADE000D17959 /* DataTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780C02154ADE000D17959 /* DataTargetType.swift */; };
+		34A780C32154AE7900D17959 /* UploadTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780C22154AE7900D17959 /* UploadTargetType.swift */; };
+		34A780C52154AE9F00D17959 /* DownloadTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780C42154AE9F00D17959 /* DownloadTargetType.swift */; };
+		34A780C72154BE1100D17959 /* QuicksilverProvider+AFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780C62154BE1100D17959 /* QuicksilverProvider+AFNetworking.swift */; };
+		34A780CA2159F37B00D17959 /* QuicksilverDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780C92159F37B00D17959 /* QuicksilverDownloadTask.swift */; };
+		34A780CC215A13D200D17959 /* TaskToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A780CB215A13D200D17959 /* TaskToken.swift */; };
+		BD1D00CF205658DF00165F9B /* Quicksilver.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1D00CD205658DF00165F9B /* Quicksilver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD208ECE2061126D00E6581B /* QuicksilverResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD208ECD2061126D00E6581B /* QuicksilverResponseSerialization.swift */; };
+		BD28C221205A3B81005579CE /* AccessTokenPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C220205A3B81005579CE /* AccessTokenPlugin.swift */; };
+		BD28C227205A6EF6005579CE /* NetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C226205A6EF6005579CE /* NetworkActivityPlugin.swift */; };
+		BD28C229205A6F21005579CE /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28C228205A6F21005579CE /* NetworkLoggerPlugin.swift */; };
+		BD37618E20B59B0300EBD659 /* QuicksilverTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37618D20B59B0300EBD659 /* QuicksilverTask.swift */; };
+		BD37619020B5AD7C00EBD659 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37618F20B5AD7C00EBD659 /* TestViewController.swift */; };
+		BD4595C32058CF4A00CBAC12 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4595C22058CF4A00CBAC12 /* Response.swift */; };
+		BD4597592058D05200CBAC12 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BD45974D2058D05200CBAC12 /* AFURLRequestSerialization.h */; };
+		BD45975A2058D05200CBAC12 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = BD45974E2058D05200CBAC12 /* AFSecurityPolicy.h */; };
+		BD45975B2058D05200CBAC12 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BD45974F2058D05200CBAC12 /* AFURLRequestSerialization.m */; };
+		BD45975D2058D05200CBAC12 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4597512058D05200CBAC12 /* AFURLSessionManager.m */; };
+		BD45975E2058D05200CBAC12 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4597522058D05200CBAC12 /* AFNetworkReachabilityManager.m */; };
+		BD45975F2058D05200CBAC12 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4597532058D05200CBAC12 /* AFURLSessionManager.h */; };
+		BD4597602058D05200CBAC12 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4597542058D05200CBAC12 /* AFNetworkReachabilityManager.h */; };
+		BD4597612058D05200CBAC12 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4597552058D05200CBAC12 /* AFURLResponseSerialization.m */; };
+		BD4597622058D05200CBAC12 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4597562058D05200CBAC12 /* AFSecurityPolicy.m */; };
+		BD4597632058D05200CBAC12 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4597572058D05200CBAC12 /* AFURLResponseSerialization.h */; };
+		BD4597662058D12800CBAC12 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4597652058D12800CBAC12 /* HTTPMethod.swift */; };
+		BD4597682058D3FB00CBAC12 /* QuicksilverError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4597672058D3FB00CBAC12 /* QuicksilverError.swift */; };
+		BD4597702058EDDA00CBAC12 /* QuicksilverProvider+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45976F2058EDDA00CBAC12 /* QuicksilverProvider+Internal.swift */; };
+		BD4597722058EF3A00CBAC12 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4597712058EF3A00CBAC12 /* Stub.swift */; };
+		BD4597742058F6F500CBAC12 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4597732058F6F500CBAC12 /* Plugin.swift */; };
+		BD45977E2059427300CBAC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45977D2059427300CBAC12 /* AppDelegate.swift */; };
+		BD4597802059427300CBAC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45977F2059427300CBAC12 /* ViewController.swift */; };
+		BD4597832059427300CBAC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4597812059427300CBAC12 /* Main.storyboard */; };
+		BD4597852059427300CBAC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4597842059427300CBAC12 /* Assets.xcassets */; };
+		BD4597882059427300CBAC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4597862059427300CBAC12 /* LaunchScreen.storyboard */; };
+		BD45978D2059428200CBAC12 /* Quicksilver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D00CA205658DF00165F9B /* Quicksilver.framework */; };
+		BD45978E2059428200CBAC12 /* Quicksilver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D00CA205658DF00165F9B /* Quicksilver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD459793205943BD00CBAC12 /* DarwinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD459792205943BD00CBAC12 /* DarwinAPI.swift */; };
+		BD4597952059512B00CBAC12 /* QuicksilverURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4597942059512B00CBAC12 /* QuicksilverURLSessionConfiguration.swift */; };
+		BD4657912061F9EF00A3BD48 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4657902061F9EF00A3BD48 /* Reachability.swift */; };
+		BD58F87F2057F03600718ACD /* Des.h in Headers */ = {isa = PBXBuildFile; fileRef = BD58F8742057F03500718ACD /* Des.h */; };
+		BD58F8802057F03600718ACD /* Des.m in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8752057F03500718ACD /* Des.m */; };
+		BD58F8812057F03600718ACD /* DNSPodEnterpriseHTTPDNSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8762057F03500718ACD /* DNSPodEnterpriseHTTPDNSService.swift */; };
+		BD58F8822057F03600718ACD /* DNSPodHTTPDNSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8772057F03500718ACD /* DNSPodHTTPDNSService.swift */; };
+		BD58F8832057F03600718ACD /* Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = BD58F8782057F03500718ACD /* Hex.h */; };
+		BD58F8842057F03600718ACD /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8792057F03500718ACD /* Hex.m */; };
+		BD58F8852057F03600718ACD /* HTTPDNSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F87A2057F03500718ACD /* HTTPDNSService.swift */; };
+		BD58F8862057F03600718ACD /* IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F87B2057F03600718ACD /* IP.swift */; };
+		BD58F8872057F03600718ACD /* HTTPDNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F87C2057F03600718ACD /* HTTPDNS.swift */; };
+		BD58F8882057F03600718ACD /* HTTPDNSResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F87D2057F03600718ACD /* HTTPDNSResult.swift */; };
+		BD58F8892057F03600718ACD /* DNSRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F87E2057F03600718ACD /* DNSRecord.swift */; };
+		BD58F8D32057F70700718ACD /* QuicksilverProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8D22057F70700718ACD /* QuicksilverProvider.swift */; };
+		BD58F8D72057F75900718ACD /* ValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58F8D62057F75900718ACD /* ValidationType.swift */; };
+		BD8237DE2068F69A001E291C /* Quicksilver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1D00CA205658DF00165F9B /* Quicksilver.framework */; };
+		BD8237E72068F9D6001E291C /* NetworkActivityPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237E62068F9D6001E291C /* NetworkActivityPluginTests.swift */; };
+		BD8237E92068F9E5001E291C /* NetworkLoggerPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237E82068F9E5001E291C /* NetworkLoggerPluginTests.swift */; };
+		BD8237EB206905E0001E291C /* AccessTokenPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237E42068F777001E291C /* AccessTokenPluginTests.swift */; };
+		BD8237EF20692034001E291C /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237EE20692034001E291C /* TaskTests.swift */; };
+		BD8237F12069210C001E291C /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237F02069210C001E291C /* ResponseTests.swift */; };
+		BD8237F3206926D0001E291C /* TargetTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237F2206926D0001E291C /* TargetTypeTests.swift */; };
+		BD8237F520692A5F001E291C /* QuicksilverHTTPResponseSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237F420692A5F001E291C /* QuicksilverHTTPResponseSerializationTests.swift */; };
+		BD8237F720692C5E001E291C /* QuicksilverProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8237F620692C5E001E291C /* QuicksilverProviderTests.swift */; };
+		BD8237FA206930BC001E291C /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8237F9206930BC001E291C /* OHHTTPStubs.framework */; };
+		BDF3DA1821EEFCBE00298154 /* QuicksilverProvider+WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF3DA1721EEFCBE00298154 /* QuicksilverProvider+WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD45978F2059428200CBAC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD1D00C1205658DF00165F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD1D00C9205658DF00165F9B;
+			remoteInfo = Quicksilver;
+		};
+		BD8237DF2068F69A001E291C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD1D00C1205658DF00165F9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD1D00C9205658DF00165F9B;
+			remoteInfo = Quicksilver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD4597912059428200CBAC12 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD45978E2059428200CBAC12 /* Quicksilver.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3449F3B3215B27F90018F0BA /* URLDownloadableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDownloadableTests.swift; sourceTree = "<group>"; };
+		34A780BE2154ADBB00D17959 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		34A780C02154ADE000D17959 /* DataTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTargetType.swift; sourceTree = "<group>"; };
+		34A780C22154AE7900D17959 /* UploadTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTargetType.swift; sourceTree = "<group>"; };
+		34A780C42154AE9F00D17959 /* DownloadTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTargetType.swift; sourceTree = "<group>"; };
+		34A780C62154BE1100D17959 /* QuicksilverProvider+AFNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuicksilverProvider+AFNetworking.swift"; sourceTree = "<group>"; };
+		34A780C92159F37B00D17959 /* QuicksilverDownloadTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverDownloadTask.swift; sourceTree = "<group>"; };
+		34A780CB215A13D200D17959 /* TaskToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToken.swift; sourceTree = "<group>"; };
+		BD1D00CA205658DF00165F9B /* Quicksilver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quicksilver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1D00CD205658DF00165F9B /* Quicksilver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.h; sourceTree = "<group>"; };
+		BD1D00CE205658DF00165F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD208ECD2061126D00E6581B /* QuicksilverResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverResponseSerialization.swift; sourceTree = "<group>"; };
+		BD28C220205A3B81005579CE /* AccessTokenPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenPlugin.swift; sourceTree = "<group>"; };
+		BD28C226205A6EF6005579CE /* NetworkActivityPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityPlugin.swift; sourceTree = "<group>"; };
+		BD28C228205A6F21005579CE /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		BD37618D20B59B0300EBD659 /* QuicksilverTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverTask.swift; sourceTree = "<group>"; };
+		BD37618F20B5AD7C00EBD659 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		BD4595C22058CF4A00CBAC12 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BD45974D2058D05200CBAC12 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BD45974E2058D05200CBAC12 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BD45974F2058D05200CBAC12 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BD4597512058D05200CBAC12 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		BD4597522058D05200CBAC12 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BD4597532058D05200CBAC12 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		BD4597542058D05200CBAC12 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BD4597552058D05200CBAC12 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BD4597562058D05200CBAC12 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BD4597572058D05200CBAC12 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BD4597652058D12800CBAC12 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BD4597672058D3FB00CBAC12 /* QuicksilverError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverError.swift; sourceTree = "<group>"; };
+		BD45976F2058EDDA00CBAC12 /* QuicksilverProvider+Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuicksilverProvider+Internal.swift"; sourceTree = "<group>"; };
+		BD4597712058EF3A00CBAC12 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		BD4597732058F6F500CBAC12 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		BD45977B2059427300CBAC12 /* QuicksilverDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuicksilverDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD45977D2059427300CBAC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD45977F2059427300CBAC12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD4597822059427300CBAC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD4597842059427300CBAC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD4597872059427300CBAC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD4597892059427300CBAC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD459792205943BD00CBAC12 /* DarwinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwinAPI.swift; sourceTree = "<group>"; };
+		BD4597942059512B00CBAC12 /* QuicksilverURLSessionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverURLSessionConfiguration.swift; sourceTree = "<group>"; };
+		BD4657902061F9EF00A3BD48 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BD58F8742057F03500718ACD /* Des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Des.h; sourceTree = "<group>"; };
+		BD58F8752057F03500718ACD /* Des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Des.m; sourceTree = "<group>"; };
+		BD58F8762057F03500718ACD /* DNSPodEnterpriseHTTPDNSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSPodEnterpriseHTTPDNSService.swift; sourceTree = "<group>"; };
+		BD58F8772057F03500718ACD /* DNSPodHTTPDNSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSPodHTTPDNSService.swift; sourceTree = "<group>"; };
+		BD58F8782057F03500718ACD /* Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hex.h; sourceTree = "<group>"; };
+		BD58F8792057F03500718ACD /* Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hex.m; sourceTree = "<group>"; };
+		BD58F87A2057F03500718ACD /* HTTPDNSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPDNSService.swift; path = LingoHTTPDNS/Sources/HTTPDNSService.swift; sourceTree = "<group>"; };
+		BD58F87B2057F03600718ACD /* IP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IP.swift; path = LingoHTTPDNS/Sources/IP.swift; sourceTree = "<group>"; };
+		BD58F87C2057F03600718ACD /* HTTPDNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPDNS.swift; path = LingoHTTPDNS/Sources/HTTPDNS.swift; sourceTree = "<group>"; };
+		BD58F87D2057F03600718ACD /* HTTPDNSResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPDNSResult.swift; path = LingoHTTPDNS/Sources/HTTPDNSResult.swift; sourceTree = "<group>"; };
+		BD58F87E2057F03600718ACD /* DNSRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DNSRecord.swift; path = LingoHTTPDNS/Sources/DNSRecord.swift; sourceTree = "<group>"; };
+		BD58F8D22057F70700718ACD /* QuicksilverProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverProvider.swift; sourceTree = "<group>"; };
+		BD58F8D62057F75900718ACD /* ValidationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationType.swift; sourceTree = "<group>"; };
+		BD8237D92068F69A001E291C /* QuicksilverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuicksilverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8237DD2068F69A001E291C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8237E42068F777001E291C /* AccessTokenPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenPluginTests.swift; sourceTree = "<group>"; };
+		BD8237E62068F9D6001E291C /* NetworkActivityPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityPluginTests.swift; sourceTree = "<group>"; };
+		BD8237E82068F9E5001E291C /* NetworkLoggerPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPluginTests.swift; sourceTree = "<group>"; };
+		BD8237EE20692034001E291C /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		BD8237F02069210C001E291C /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		BD8237F2206926D0001E291C /* TargetTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTypeTests.swift; sourceTree = "<group>"; };
+		BD8237F420692A5F001E291C /* QuicksilverHTTPResponseSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverHTTPResponseSerializationTests.swift; sourceTree = "<group>"; };
+		BD8237F620692C5E001E291C /* QuicksilverProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverProviderTests.swift; sourceTree = "<group>"; };
+		BD8237F9206930BC001E291C /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		BDF3DA1721EEFCBE00298154 /* QuicksilverProvider+WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuicksilverProvider+WebSocket.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD1D00C6205658DF00165F9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4597782059427300CBAC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45978D2059428200CBAC12 /* Quicksilver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8237D62068F69A001E291C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8237FA206930BC001E291C /* OHHTTPStubs.framework in Frameworks */,
+				BD8237DE2068F69A001E291C /* Quicksilver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34A780BD2154ADA500D17959 /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				34A780BE2154ADBB00D17959 /* TargetType.swift */,
+				34A780C02154ADE000D17959 /* DataTargetType.swift */,
+				34A780C22154AE7900D17959 /* UploadTargetType.swift */,
+				34A780C42154AE9F00D17959 /* DownloadTargetType.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		34A780C82159DDC100D17959 /* QuicksilverTask */ = {
+			isa = PBXGroup;
+			children = (
+				BD37618D20B59B0300EBD659 /* QuicksilverTask.swift */,
+				34A780C92159F37B00D17959 /* QuicksilverDownloadTask.swift */,
+				34A780CB215A13D200D17959 /* TaskToken.swift */,
+			);
+			path = QuicksilverTask;
+			sourceTree = "<group>";
+		};
+		BD1D00C0205658DF00165F9B = {
+			isa = PBXGroup;
+			children = (
+				BD1D00CC205658DF00165F9B /* Quicksilver */,
+				BD45977C2059427300CBAC12 /* QuicksilverDemo */,
+				BD8237DA2068F69A001E291C /* QuicksilverTests */,
+				BD1D00CB205658DF00165F9B /* Products */,
+				BD8237F8206930BC001E291C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD1D00CB205658DF00165F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D00CA205658DF00165F9B /* Quicksilver.framework */,
+				BD45977B2059427300CBAC12 /* QuicksilverDemo.app */,
+				BD8237D92068F69A001E291C /* QuicksilverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD1D00CC205658DF00165F9B /* Quicksilver */ = {
+			isa = PBXGroup;
+			children = (
+				BD58F67E2057F01300718ACD /* Source */,
+				BD58F67F2057F01300718ACD /* SubModule */,
+				BD1D00CD205658DF00165F9B /* Quicksilver.h */,
+				BD1D00CE205658DF00165F9B /* Info.plist */,
+			);
+			path = Quicksilver;
+			sourceTree = "<group>";
+		};
+		BD28C21F205A3B5F005579CE /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BD28C220205A3B81005579CE /* AccessTokenPlugin.swift */,
+				BD28C226205A6EF6005579CE /* NetworkActivityPlugin.swift */,
+				BD28C228205A6F21005579CE /* NetworkLoggerPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		BD4595C42058D02600CBAC12 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BD4597542058D05200CBAC12 /* AFNetworkReachabilityManager.h */,
+				BD4597522058D05200CBAC12 /* AFNetworkReachabilityManager.m */,
+				BD45974E2058D05200CBAC12 /* AFSecurityPolicy.h */,
+				BD4597562058D05200CBAC12 /* AFSecurityPolicy.m */,
+				BD45974D2058D05200CBAC12 /* AFURLRequestSerialization.h */,
+				BD45974F2058D05200CBAC12 /* AFURLRequestSerialization.m */,
+				BD4597572058D05200CBAC12 /* AFURLResponseSerialization.h */,
+				BD4597552058D05200CBAC12 /* AFURLResponseSerialization.m */,
+				BD4597532058D05200CBAC12 /* AFURLSessionManager.h */,
+				BD4597512058D05200CBAC12 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		BD45977C2059427300CBAC12 /* QuicksilverDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BD45977D2059427300CBAC12 /* AppDelegate.swift */,
+				BD45977F2059427300CBAC12 /* ViewController.swift */,
+				BD37618F20B5AD7C00EBD659 /* TestViewController.swift */,
+				BD459792205943BD00CBAC12 /* DarwinAPI.swift */,
+				BD4597812059427300CBAC12 /* Main.storyboard */,
+				BD4597842059427300CBAC12 /* Assets.xcassets */,
+				BD4597862059427300CBAC12 /* LaunchScreen.storyboard */,
+				BD4597892059427300CBAC12 /* Info.plist */,
+			);
+			path = QuicksilverDemo;
+			sourceTree = "<group>";
+		};
+		BD58F67E2057F01300718ACD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BD4657902061F9EF00A3BD48 /* Reachability.swift */,
+				BD4597942059512B00CBAC12 /* QuicksilverURLSessionConfiguration.swift */,
+				BD58F8D22057F70700718ACD /* QuicksilverProvider.swift */,
+				BDF3DA1721EEFCBE00298154 /* QuicksilverProvider+WebSocket.swift */,
+				BD45976F2058EDDA00CBAC12 /* QuicksilverProvider+Internal.swift */,
+				34A780C62154BE1100D17959 /* QuicksilverProvider+AFNetworking.swift */,
+				BD208ECD2061126D00E6581B /* QuicksilverResponseSerialization.swift */,
+				BD58F8D62057F75900718ACD /* ValidationType.swift */,
+				BD4597732058F6F500CBAC12 /* Plugin.swift */,
+				BD4595C22058CF4A00CBAC12 /* Response.swift */,
+				BD4597672058D3FB00CBAC12 /* QuicksilverError.swift */,
+				BD4597712058EF3A00CBAC12 /* Stub.swift */,
+				BD4597652058D12800CBAC12 /* HTTPMethod.swift */,
+				34A780C82159DDC100D17959 /* QuicksilverTask */,
+				34A780BD2154ADA500D17959 /* TargetType */,
+				BD28C21F205A3B5F005579CE /* Plugins */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BD58F67F2057F01300718ACD /* SubModule */ = {
+			isa = PBXGroup;
+			children = (
+				BD4595C42058D02600CBAC12 /* AFNetworking */,
+				BD58F7612057F01400718ACD /* LingoHTTPDNS */,
+			);
+			path = SubModule;
+			sourceTree = "<group>";
+		};
+		BD58F7612057F01400718ACD /* LingoHTTPDNS */ = {
+			isa = PBXGroup;
+			children = (
+				BD58F8732057F03500718ACD /* DNSPod */,
+				BD58F87E2057F03600718ACD /* DNSRecord.swift */,
+				BD58F87C2057F03600718ACD /* HTTPDNS.swift */,
+				BD58F87D2057F03600718ACD /* HTTPDNSResult.swift */,
+				BD58F87A2057F03500718ACD /* HTTPDNSService.swift */,
+				BD58F87B2057F03600718ACD /* IP.swift */,
+			);
+			path = LingoHTTPDNS;
+			sourceTree = "<group>";
+		};
+		BD58F8732057F03500718ACD /* DNSPod */ = {
+			isa = PBXGroup;
+			children = (
+				BD58F8742057F03500718ACD /* Des.h */,
+				BD58F8752057F03500718ACD /* Des.m */,
+				BD58F8782057F03500718ACD /* Hex.h */,
+				BD58F8792057F03500718ACD /* Hex.m */,
+				BD58F8762057F03500718ACD /* DNSPodEnterpriseHTTPDNSService.swift */,
+				BD58F8772057F03500718ACD /* DNSPodHTTPDNSService.swift */,
+			);
+			name = DNSPod;
+			path = LingoHTTPDNS/Sources/DNSPod;
+			sourceTree = "<group>";
+		};
+		BD8237DA2068F69A001E291C /* QuicksilverTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD8237E42068F777001E291C /* AccessTokenPluginTests.swift */,
+				BD8237E62068F9D6001E291C /* NetworkActivityPluginTests.swift */,
+				BD8237E82068F9E5001E291C /* NetworkLoggerPluginTests.swift */,
+				BD8237EE20692034001E291C /* TaskTests.swift */,
+				3449F3B3215B27F90018F0BA /* URLDownloadableTests.swift */,
+				BD8237F02069210C001E291C /* ResponseTests.swift */,
+				BD8237F2206926D0001E291C /* TargetTypeTests.swift */,
+				BD8237F420692A5F001E291C /* QuicksilverHTTPResponseSerializationTests.swift */,
+				BD8237F620692C5E001E291C /* QuicksilverProviderTests.swift */,
+				BD8237DD2068F69A001E291C /* Info.plist */,
+			);
+			path = QuicksilverTests;
+			sourceTree = "<group>";
+		};
+		BD8237F8206930BC001E291C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD8237F9206930BC001E291C /* OHHTTPStubs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BD1D00C7205658DF00165F9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1D00CF205658DF00165F9B /* Quicksilver.h in Headers */,
+				BD58F8832057F03600718ACD /* Hex.h in Headers */,
+				BD58F87F2057F03600718ACD /* Des.h in Headers */,
+				BD45975F2058D05200CBAC12 /* AFURLSessionManager.h in Headers */,
+				BD4597602058D05200CBAC12 /* AFNetworkReachabilityManager.h in Headers */,
+				BD45975A2058D05200CBAC12 /* AFSecurityPolicy.h in Headers */,
+				BD4597632058D05200CBAC12 /* AFURLResponseSerialization.h in Headers */,
+				BD4597592058D05200CBAC12 /* AFURLRequestSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BD1D00C9205658DF00165F9B /* Quicksilver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD1D00D2205658E000165F9B /* Build configuration list for PBXNativeTarget "Quicksilver" */;
+			buildPhases = (
+				BD1D00C5205658DF00165F9B /* Sources */,
+				BD1D00C6205658DF00165F9B /* Frameworks */,
+				BD1D00C7205658DF00165F9B /* Headers */,
+				BD1D00C8205658DF00165F9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quicksilver;
+			productName = Quicksilver;
+			productReference = BD1D00CA205658DF00165F9B /* Quicksilver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD45977A2059427300CBAC12 /* QuicksilverDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD45978A2059427300CBAC12 /* Build configuration list for PBXNativeTarget "QuicksilverDemo" */;
+			buildPhases = (
+				BD4597772059427300CBAC12 /* Sources */,
+				BD4597782059427300CBAC12 /* Frameworks */,
+				BD4597792059427300CBAC12 /* Resources */,
+				BD4597912059428200CBAC12 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD4597902059428200CBAC12 /* PBXTargetDependency */,
+			);
+			name = QuicksilverDemo;
+			productName = QuicksilverDemo;
+			productReference = BD45977B2059427300CBAC12 /* QuicksilverDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD8237D82068F69A001E291C /* QuicksilverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8237E32068F69A001E291C /* Build configuration list for PBXNativeTarget "QuicksilverTests" */;
+			buildPhases = (
+				BD8237D52068F69A001E291C /* Sources */,
+				BD8237D62068F69A001E291C /* Frameworks */,
+				BD8237D72068F69A001E291C /* Resources */,
+				BD8237FB20693162001E291C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8237E02068F69A001E291C /* PBXTargetDependency */,
+			);
+			name = QuicksilverTests;
+			productName = QuicksilverTests;
+			productReference = BD8237D92068F69A001E291C /* QuicksilverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD1D00C1205658DF00165F9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "LLS iOS Team";
+				TargetAttributes = {
+					BD1D00C9205658DF00165F9B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					BD45977A2059427300CBAC12 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BD8237D82068F69A001E291C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD1D00C4205658DF00165F9B /* Build configuration list for PBXProject "Quicksilver" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD1D00C0205658DF00165F9B;
+			productRefGroup = BD1D00CB205658DF00165F9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD1D00C9205658DF00165F9B /* Quicksilver */,
+				BD8237D82068F69A001E291C /* QuicksilverTests */,
+				BD45977A2059427300CBAC12 /* QuicksilverDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD1D00C8205658DF00165F9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4597792059427300CBAC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4597882059427300CBAC12 /* LaunchScreen.storyboard in Resources */,
+				BD4597852059427300CBAC12 /* Assets.xcassets in Resources */,
+				BD4597832059427300CBAC12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8237D72068F69A001E291C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD8237FB20693162001E291C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD1D00C5205658DF00165F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD58F8822057F03600718ACD /* DNSPodHTTPDNSService.swift in Sources */,
+				BD4597952059512B00CBAC12 /* QuicksilverURLSessionConfiguration.swift in Sources */,
+				BD58F8872057F03600718ACD /* HTTPDNS.swift in Sources */,
+				34A780C32154AE7900D17959 /* UploadTargetType.swift in Sources */,
+				BD58F8D32057F70700718ACD /* QuicksilverProvider.swift in Sources */,
+				BD58F8882057F03600718ACD /* HTTPDNSResult.swift in Sources */,
+				BD208ECE2061126D00E6581B /* QuicksilverResponseSerialization.swift in Sources */,
+				34A780C72154BE1100D17959 /* QuicksilverProvider+AFNetworking.swift in Sources */,
+				BD45975E2058D05200CBAC12 /* AFNetworkReachabilityManager.m in Sources */,
+				BD28C229205A6F21005579CE /* NetworkLoggerPlugin.swift in Sources */,
+				BD28C221205A3B81005579CE /* AccessTokenPlugin.swift in Sources */,
+				BD58F8852057F03600718ACD /* HTTPDNSService.swift in Sources */,
+				34A780C12154ADE000D17959 /* DataTargetType.swift in Sources */,
+				BD4597622058D05200CBAC12 /* AFSecurityPolicy.m in Sources */,
+				BD58F8892057F03600718ACD /* DNSRecord.swift in Sources */,
+				BD58F8862057F03600718ACD /* IP.swift in Sources */,
+				34A780C52154AE9F00D17959 /* DownloadTargetType.swift in Sources */,
+				BD45975D2058D05200CBAC12 /* AFURLSessionManager.m in Sources */,
+				BD58F8D72057F75900718ACD /* ValidationType.swift in Sources */,
+				BD4597702058EDDA00CBAC12 /* QuicksilverProvider+Internal.swift in Sources */,
+				34A780CA2159F37B00D17959 /* QuicksilverDownloadTask.swift in Sources */,
+				BD58F8842057F03600718ACD /* Hex.m in Sources */,
+				BD4597662058D12800CBAC12 /* HTTPMethod.swift in Sources */,
+				BD28C227205A6EF6005579CE /* NetworkActivityPlugin.swift in Sources */,
+				34A780BF2154ADBB00D17959 /* TargetType.swift in Sources */,
+				BDF3DA1821EEFCBE00298154 /* QuicksilverProvider+WebSocket.swift in Sources */,
+				BD4597612058D05200CBAC12 /* AFURLResponseSerialization.m in Sources */,
+				BD4597682058D3FB00CBAC12 /* QuicksilverError.swift in Sources */,
+				34A780CC215A13D200D17959 /* TaskToken.swift in Sources */,
+				BD37618E20B59B0300EBD659 /* QuicksilverTask.swift in Sources */,
+				BD45975B2058D05200CBAC12 /* AFURLRequestSerialization.m in Sources */,
+				BD4595C32058CF4A00CBAC12 /* Response.swift in Sources */,
+				BD4657912061F9EF00A3BD48 /* Reachability.swift in Sources */,
+				BD58F8812057F03600718ACD /* DNSPodEnterpriseHTTPDNSService.swift in Sources */,
+				BD58F8802057F03600718ACD /* Des.m in Sources */,
+				BD4597742058F6F500CBAC12 /* Plugin.swift in Sources */,
+				BD4597722058EF3A00CBAC12 /* Stub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4597772059427300CBAC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4597802059427300CBAC12 /* ViewController.swift in Sources */,
+				BD459793205943BD00CBAC12 /* DarwinAPI.swift in Sources */,
+				BD37619020B5AD7C00EBD659 /* TestViewController.swift in Sources */,
+				BD45977E2059427300CBAC12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD8237D52068F69A001E291C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD8237EB206905E0001E291C /* AccessTokenPluginTests.swift in Sources */,
+				BD8237E92068F9E5001E291C /* NetworkLoggerPluginTests.swift in Sources */,
+				BD8237F3206926D0001E291C /* TargetTypeTests.swift in Sources */,
+				BD8237EF20692034001E291C /* TaskTests.swift in Sources */,
+				BD8237F520692A5F001E291C /* QuicksilverHTTPResponseSerializationTests.swift in Sources */,
+				BD8237F720692C5E001E291C /* QuicksilverProviderTests.swift in Sources */,
+				3449F3B4215B27F90018F0BA /* URLDownloadableTests.swift in Sources */,
+				BD8237F12069210C001E291C /* ResponseTests.swift in Sources */,
+				BD8237E72068F9D6001E291C /* NetworkActivityPluginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD4597902059428200CBAC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD1D00C9205658DF00165F9B /* Quicksilver */;
+			targetProxy = BD45978F2059428200CBAC12 /* PBXContainerItemProxy */;
+		};
+		BD8237E02068F69A001E291C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD1D00C9205658DF00165F9B /* Quicksilver */;
+			targetProxy = BD8237DF2068F69A001E291C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD4597812059427300CBAC12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD4597822059427300CBAC12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD4597862059427300CBAC12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD4597872059427300CBAC12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD1D00D0205658DF00165F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD1D00D1205658DF00165F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD1D00D3205658E000165F9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/Quicksilver/Project/StarscreamPrivate;
+				INFOPLIST_FILE = Quicksilver/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.Quicksilver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Quicksilver/ModuleMap/** $(SRCROOT)/Quicksilver/SubModule/LingoHTTPDNS/LingoHTTPDNS/ModuleMap/**";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD1D00D4205658E000165F9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/Quicksilver/Project/StarscreamPrivate;
+				INFOPLIST_FILE = Quicksilver/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.Quicksilver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Quicksilver/ModuleMap/** $(SRCROOT)/Quicksilver/SubModule/LingoHTTPDNS/LingoHTTPDNS/ModuleMap/**";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD45978B2059427300CBAC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				INFOPLIST_FILE = QuicksilverDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.QuicksilverDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD45978C2059427300CBAC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				INFOPLIST_FILE = QuicksilverDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.QuicksilverDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD8237E12068F69A001E291C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QuicksilverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.QuicksilverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8237E22068F69A001E291C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QuicksilverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.QuicksilverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD1D00C4205658DF00165F9B /* Build configuration list for PBXProject "Quicksilver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1D00D0205658DF00165F9B /* Debug */,
+				BD1D00D1205658DF00165F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1D00D2205658E000165F9B /* Build configuration list for PBXNativeTarget "Quicksilver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1D00D3205658E000165F9B /* Debug */,
+				BD1D00D4205658E000165F9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD45978A2059427300CBAC12 /* Build configuration list for PBXNativeTarget "QuicksilverDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45978B2059427300CBAC12 /* Debug */,
+				BD45978C2059427300CBAC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD8237E32068F69A001E291C /* Build configuration list for PBXNativeTarget "QuicksilverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8237E12068F69A001E291C /* Debug */,
+				BD8237E22068F69A001E291C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD1D00C1205658DF00165F9B /* Project object */;
+}

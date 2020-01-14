@@ -1,0 +1,11 @@
+{
+  "authenticationResult": {
+    "accessToken": "accessToken",
+    "expiresAtSec": "not-a-number",
+    "refreshToken": "refreshToken",
+    "id": "neoID",
+    "login": "12345",
+    "avatar": "https://google.com",
+    "isNewRegister": true
+  }
+}

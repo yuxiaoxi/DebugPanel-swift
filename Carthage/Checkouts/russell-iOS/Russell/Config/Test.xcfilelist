@@ -1,0 +1,13 @@
+#  Test.xcfilelist
+#  Russell
+#
+#  Created by Yunfan Cui on 2018/12/25.
+#  Copyright © 2018 LLS. All rights reserved.
+
+# This file may be set as an input or output file list for a shell script build phase.
+# List file paths below; one per line. These paths will be considered inputs or outputs for the script phase.
+# Build settings will be expanded, e.g. $(SRCROOT)/fileName
+
+$(SRCROOT)/../Carthage/Build/iOS/Quicksilver.framework
+$(SRCROOT)/../Carthage/Build/iOS/Quick.framework
+$(SRCROOT)/../Carthage/Build/iOS/Nimble.framework

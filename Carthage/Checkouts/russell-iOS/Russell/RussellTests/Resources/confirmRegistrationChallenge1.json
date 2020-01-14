@@ -1,0 +1,9 @@
+{
+  "challengeType": "CREATE_ACCOUNT",
+  "session": "session-id-x",
+  "challengeParams": {
+    "nick": "x",
+    "avatar": "x",
+    "unknown": 23
+  }
+}

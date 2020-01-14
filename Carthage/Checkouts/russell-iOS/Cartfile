@@ -1,0 +1,2 @@
+git "git@git.llsapp.com:client-infra/Quicksilver.git" ~> 3.3.0
+git "git@git.llsapp.com:ios/LingoLog.git" >= 4.1.0

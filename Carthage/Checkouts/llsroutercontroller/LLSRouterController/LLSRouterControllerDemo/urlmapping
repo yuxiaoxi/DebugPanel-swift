@@ -1,0 +1,4 @@
+########### 主业务的URL mapping配置 ###########
+
+#weex                                 : MTAWeexViewController
+firstVC                               : FirstViewController

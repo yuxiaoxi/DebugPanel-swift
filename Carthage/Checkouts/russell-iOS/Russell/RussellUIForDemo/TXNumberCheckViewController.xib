@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TXNumberCheckViewController" customModule="RussellUIForDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="conformButton" destination="u6Q-3J-oIV" id="foX-Ie-CWN"/>
+                <outlet property="costTimeLabel" destination="tpO-Ud-hch" id="dZa-Qu-ToJ"/>
+                <outlet property="loginButton" destination="kd9-tc-BGp" id="WyD-fJ-o5B"/>
+                <outlet property="onekeyBinderButton" destination="9hq-0E-sjk" id="kQj-sM-aNr"/>
+                <outlet property="onekeyLoginUIButton" destination="3yI-N2-RES" id="nmi-gb-zRM"/>
+                <outlet property="preFetchButton" destination="vBn-2F-OuA" id="jjl-YC-qzw"/>
+                <outlet property="stactView" destination="7S6-aC-xSf" id="G8Z-cJ-5Lc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-aC-xSf">
+                    <rect key="frame" x="126.5" y="200" width="160" height="210"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6Q-3J-oIV">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                            <state key="normal" title="            1、初始化           "/>
+                            <connections>
+                                <action selector="startInitSDK:" destination="-1" eventType="touchUpInside" id="EQ4-p4-Zee"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBn-2F-OuA">
+                            <rect key="frame" x="5.5" y="45" width="149" height="30"/>
+                            <state key="normal" title="        2、唤起授权页    "/>
+                            <connections>
+                                <action selector="preFetchNum:" destination="-1" eventType="touchUpInside" id="N8S-P6-a0e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd9-tc-BGp">
+                            <rect key="frame" x="11" y="90" width="138" height="30"/>
+                            <state key="normal" title="       3、一键登录      "/>
+                            <connections>
+                                <action selector="getLoginMobileAndToken:" destination="-1" eventType="touchUpInside" id="Dde-G9-YPN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hq-0E-sjk">
+                            <rect key="frame" x="49" y="135" width="62" height="30"/>
+                            <state key="normal" title="一键绑定"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yI-N2-RES">
+                            <rect key="frame" x="40" y="180" width="80" height="30"/>
+                            <state key="normal" title="一键登录 UI"/>
+                            <connections>
+                                <action selector="onekeyLoginUI:" destination="-1" eventType="touchUpInside" id="LXk-Uw-lEd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="这里是描述" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpO-Ud-hch">
+                    <rect key="frame" x="67" y="425" width="280" height="81"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="50.724637681159422" y="81.696428571428569"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1cX-A1-GD7">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="-381" y="-73"/>
+        </button>
+    </objects>
+</document>

@@ -1,0 +1,5 @@
+module DesPrivate [system][extern_c] {
+  header "../Sources/DNSPod/Des.h"
+  header "../Sources/DNSPod/Hex.h"
+  export *
+}

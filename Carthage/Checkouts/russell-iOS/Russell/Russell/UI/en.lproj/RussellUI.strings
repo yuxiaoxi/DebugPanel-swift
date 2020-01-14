@@ -1,0 +1,67 @@
+/* 
+  RussellUI.strings
+  Russell
+
+  Created by Yunfan Cui on 2019/7/22.
+  Copyright © 2019 LLS. All rights reserved.
+*/
+
+/* Input Mobile */
+
+"Input-Mobile-Bind-Header" = "绑定手机号码";
+"Input-Mobile-Bind-Detail" = "根据国家网络安全法要求，需完成手机绑定才能使用本产品。";
+
+"Input-Mobile-Privacy-Header" = "温馨提示";
+"Input-Mobile-Privacy-Detail-Formatter" = "根据国家网络安全法要求，请查看《%LINK%》并完成手机绑定，同意《%LINK%》并绑定手机后方可使用本产品。";
+"Input-Mobile-Privacy" = "隐私政策";
+
+"Input-Mobile-Rebind-Header" = "更换手机号码";
+"Input-Mobile-Rebind-Detail-Normal" = "换绑成功后，可使用新手机号登录！";
+"Input-Mobile-Rebind-Detail-Expired" = "您之前的临时身份验证已到期，请继续绑定手机号完成身份认证！";
+
+"Input-Mobile-Placeholder" = "点击输入手机号";
+
+"Input-Mobile-Button-Next" = "下一步";
+
+/* Verify Mobile Code */
+
+"Verify-Mobile-Code-Header" = "请输入验证码";
+"Verify-Mobile-Code-Detail-Format" = "已发送至 %@";
+"Verify-Mobile-Code-Resend" = "重新发送";
+
+/* Review Bound Mobile */
+
+"Review-Bound-Mobile-Title" = "绑定手机号";
+"Review-Bound-Mobile-Your-Mobile-Format" = "您的手机号 %@";
+"Review-Bound-Mobile-Rebind-Button" = "更换手机号";
+"Review-Bound-Mobile-Bind-Button" = "绑定手机号";
+
+/* Toast */
+
+"Successfully-Bound-Toast" = "绑定成功";
+
+/* Notices */
+
+"Notice-Message-RealNameCertificationNotice-confirmWeakBinding" = "该手机号已绑定其他账号，此次验证只作为临时身份验证，有效期为6个月，无法作为登录凭证，请尽快绑定其他手机号。";
+"Notice-Action-RealNameCertificationNotice-confirmWeakBinding" = "知道了，继续验证";
+
+"Notice-Title-RealNameCertificationNotice-bindMobile" = "实名认证";
+"Notice-Message-RealNameCertificationNotice-bindMobile" = "根据国家网络安全法要求，请绑定手机后方可使用本产品";
+"Notice-Action-RealNameCertificationNotice-bindMobile" = "好";
+
+"Notice-Message-RealNameCertificationNotice-sessionExpired" = "页面停留时间过长，请重新登录";
+"Notice-Action-RealNameCertificationNotice-sessionExpired" = "重新登录";
+
+/* Alerts */
+
+"Alert-Message-RealNameCertificationAlert-mobileAlreadyBound" = "该手机号已绑定其他账号，请使用该手机号登录。";
+"Alert-Action-RealNameCertificationAlert-mobileAlreadyBound" = "登录已有账号";
+"Alert-Cancel-RealNameCertificationAlert-mobileAlreadyBound" = "返回并重新绑定";
+
+"Alert-Message-RealNameCertificationAlert-weakBoundExpiring" = "您绑定的手机号为临时身份验证，即将过期，请尽快更换手机号！";
+"Alert-Action-RealNameCertificationAlert-weakBoundExpiring" = "立即更换";
+"Alert-Cancel-RealNameCertificationAlert-weakBoundExpiring" = "暂不更换";
+
+"Alert-Message-RealNameCertificationAlert-waitForDelayedMobileCode" = "短信验证码可能略有延迟，确定返回?";
+"Alert-Action-RealNameCertificationAlert-waitForDelayedMobileCode" = "确定";
+"Alert-Cancel-RealNameCertificationAlert-waitForDelayedMobileCode" = "等待";

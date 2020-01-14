@@ -1,0 +1,5 @@
+module LingoLogPrivate [system][extern_c] {
+  header "../LingoLog/Service/LingoLogExceptionHandler.h"
+  export *
+}
+

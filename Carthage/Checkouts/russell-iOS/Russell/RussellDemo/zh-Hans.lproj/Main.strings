@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Wechat Login"; ObjectID = "2dJ-Wa-9cN"; */
+"2dJ-Wa-9cN.normalTitle" = "Wechat Login";
+
+/* Class = "UIButton"; normalTitle = "QQ Login"; ObjectID = "EcX-C4-ieE"; */
+"EcX-C4-ieE.normalTitle" = "QQ Login";
+
+/* Class = "UILabel"; text = "Not supported yet"; ObjectID = "JLs-i5-kQJ"; */
+"JLs-i5-kQJ.text" = "Not supported yet";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "MGN-6e-gCm"; */
+"MGN-6e-gCm.placeholder" = "Mobile";
+
+/* Class = "UIButton"; normalTitle = "Password Login"; ObjectID = "ZyC-fK-TYw"; */
+"ZyC-fK-TYw.normalTitle" = "Password Login";
+
+/* Class = "UIButton"; normalTitle = "Send SMS"; ObjectID = "fcd-5G-K3v"; */
+"fcd-5G-K3v.normalTitle" = "Send SMS";
+
+/* Class = "UIButton"; normalTitle = "SMS Login"; ObjectID = "qmK-Tt-pUA"; */
+"qmK-Tt-pUA.normalTitle" = "SMS Login";

@@ -1,0 +1,7 @@
+module AFNetworkingPrivate [system][extern_c] {
+  header "../SubModule/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+  header "../SubModule/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+  header "../SubModule/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+  header "../SubModule/AFNetworking/AFNetworking/AFURLSessionManager.h"
+  export *
+}

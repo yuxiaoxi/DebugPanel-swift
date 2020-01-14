@@ -1,0 +1,34 @@
+# Liulishuo Apocalypse Project
+#
+
+stages:
+  - lint
+  - test
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+    #SLACK_USERNAME: "Harvest"
+    #SLACK_CHANNEL: "#harvest_notification"
+    
+before_script:
+  - bundle install
+
+Lint: 
+    script:
+      - bundle exec fastlane lint
+    type: lint
+    tags: 
+      - lint_swift5
+
+Test:
+    script: 
+      - bundle exec fastlane test
+    type: test
+    only:
+       - /^feature\/*/
+       - /^hotfix\/*/
+       - /^release\/*/
+       - master
+    tags:
+       - Swift5

@@ -1,0 +1,9 @@
+{
+  "authenticationResult": {
+    "accessToken": "accessToken",
+    "expiresAtSec": 1550823363,
+    "refreshToken": "refreshToken",
+    "login": "12345",
+    "isNewRegister": true
+  }
+}

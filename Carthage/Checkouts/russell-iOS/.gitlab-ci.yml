@@ -1,0 +1,62 @@
+# Liulishuo EitherBunch Project
+#
+
+stages:
+  - lint
+  - test
+  - beta
+  - deploy
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+    #SLACK_USERNAME: "Harvest"
+    #SLACK_CHANNEL: "#harvest_notification"
+    
+before_script:
+  - bundle install
+
+Lint: 
+    script:
+      - bundle exec fastlane lint
+    type: lint
+    tags: 
+      - lint_swift5_1
+
+Test:
+    variables: {"CARTHAGE_BUILD": "YES", "FL_CARTHAGE_PLATFORM": "iOS"}
+    script: 
+      - bundle exec fastlane test
+    allow_failure: false
+    type: test
+    when: manual
+    only:
+       - /^feature\/*/
+       - /^hotfix\/*/
+       - /^release\/*/
+       - master
+    tags:
+       - Xcode11
+
+Beta:
+  variables:
+    CARTHAGE_BUILD: "YES"
+  script:
+    - bundle exec fastlane beta
+  type: beta
+  when: manual
+  cache:
+      paths:
+        - Carthage/Build/
+      key: "russell-beta"
+  tags:
+    - Xcode11
+
+Deploy:
+    script:
+        - bundle exec fastlane sync_versions # 默认同步整个 CHANGELOG.md 内容到 Jarvis
+    type: deploy
+    only: 
+      - tags
+    tags:
+        - Xcode11

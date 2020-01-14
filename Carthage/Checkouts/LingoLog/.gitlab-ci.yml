@@ -1,0 +1,43 @@
+# Liulishuo Quicksilver  Project
+#
+
+stages:
+  - lint
+  - test
+  - deploy
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+  GIT_SUBMODULE_STRATEGY: "recursive"
+    
+before_script:
+  - bundle install
+
+Lint: 
+    script:
+      - bundle exec fastlane lint
+    type: lint
+    tags: 
+      - lint
+
+Test:
+    script: 
+      - bundle exec fastlane test
+    type: test
+    only:
+       - /^feature\/*/
+       - /^hotfix\/*/
+       - /^release\/*/
+       - master
+    tags:
+       - Xcode10_2
+
+Deploy:
+    script:
+        - bundle exec fastlane sync_versions
+    type: deploy
+    only:
+        - tags
+    tags:
+        - Xcode10_2

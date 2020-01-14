@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifySMSCodeViewController" customModule="RussellUIForDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="resultLabel" destination="xB9-7c-ULT" id="kVM-BO-bFK"/>
+                <outlet property="smsField" destination="WvN-Et-Aok" id="8rM-o4-zTl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="x2a-f0-uZ5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOa-EO-DIE">
+                    <rect key="frame" x="167.5" y="90" width="40" height="30"/>
+                    <state key="normal" title="Verify"/>
+                    <connections>
+                        <action selector="verify" destination="-1" eventType="touchUpInside" id="rpE-bq-K8S"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SMS Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WvN-Et-Aok">
+                    <rect key="frame" x="20" y="40" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVv-4e-riT">
+                    <rect key="frame" x="144" y="130" width="87" height="30"/>
+                    <state key="normal" title="Resend SMS"/>
+                    <connections>
+                        <action selector="resendSMS" destination="-1" eventType="touchUpInside" id="bsX-Db-Crm"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="F6s-9V-Le2">
+                    <rect key="frame" x="20" y="180" width="335" height="467"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-7c-ULT">
+                            <rect key="frame" x="8" y="8" width="319" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xB9-7c-ULT" firstAttribute="top" secondItem="F6s-9V-Le2" secondAttribute="top" constant="8" id="5iO-hc-rxJ"/>
+                        <constraint firstAttribute="bottom" secondItem="xB9-7c-ULT" secondAttribute="bottom" constant="8" id="6pG-pC-KqU"/>
+                        <constraint firstItem="xB9-7c-ULT" firstAttribute="width" secondItem="F6s-9V-Le2" secondAttribute="width" constant="-16" id="9pG-aF-Se4"/>
+                        <constraint firstAttribute="trailing" secondItem="xB9-7c-ULT" secondAttribute="trailing" constant="8" id="eiH-gS-l11"/>
+                        <constraint firstItem="xB9-7c-ULT" firstAttribute="leading" secondItem="F6s-9V-Le2" secondAttribute="leading" constant="8" id="suT-7e-h04"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="F6s-9V-Le2" secondAttribute="bottom" constant="20" id="Dce-PI-UEO"/>
+                <constraint firstItem="CVv-4e-riT" firstAttribute="top" secondItem="pOa-EO-DIE" secondAttribute="bottom" constant="10" id="KBj-A4-gil"/>
+                <constraint firstItem="WvN-Et-Aok" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="LTM-fv-rrO"/>
+                <constraint firstItem="pOa-EO-DIE" firstAttribute="top" secondItem="WvN-Et-Aok" secondAttribute="bottom" constant="20" id="P7S-TS-gZo"/>
+                <constraint firstItem="pOa-EO-DIE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T4A-Bb-EK7"/>
+                <constraint firstItem="F6s-9V-Le2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Zen-7k-fPn"/>
+                <constraint firstItem="CVv-4e-riT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZyE-f1-nNL"/>
+                <constraint firstItem="WvN-Et-Aok" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="em4-m5-hhO"/>
+                <constraint firstItem="WvN-Et-Aok" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fjG-W5-rnn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F6s-9V-Le2" secondAttribute="trailing" constant="20" id="lUs-hp-0Cv"/>
+                <constraint firstItem="F6s-9V-Le2" firstAttribute="top" secondItem="CVv-4e-riT" secondAttribute="bottom" constant="20" id="viW-wy-J3t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

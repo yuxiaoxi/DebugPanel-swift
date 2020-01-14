@@ -1,0 +1,8 @@
+{
+  "challengeType": "GEETEST",
+  "challengeParams": {
+    "challenge": "ch",
+    "gt": "gt"
+  }, 
+  "session": "captcha-session-ID"
+}

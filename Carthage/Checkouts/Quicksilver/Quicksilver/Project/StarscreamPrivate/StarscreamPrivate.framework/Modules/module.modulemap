@@ -1,0 +1,11 @@
+framework module StarscreamPrivate {
+  umbrella header "StarscreamPrivate.h"
+
+  export *
+  module * { export * }
+}
+
+module StarscreamPrivate.Swift {
+    header "StarscreamPrivate-Swift.h"
+    requires objc
+}

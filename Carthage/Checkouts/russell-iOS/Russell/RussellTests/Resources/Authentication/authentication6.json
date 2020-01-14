@@ -1,0 +1,11 @@
+{
+  "authenticationResult": {
+    "accessToken": "accessToken",
+    "expiresAtSec": "1550823363",
+    "refreshToken": "refreshToken",
+    "id": "neoID",
+    "login": "12345",
+    "avatar": "",
+    "isNewRegister": false
+  }
+}

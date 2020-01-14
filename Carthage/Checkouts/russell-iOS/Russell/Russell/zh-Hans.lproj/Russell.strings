@@ -1,0 +1,76 @@
+/* 
+  Russell.strings
+  Russell
+
+  Created by Yunfan Cui on 2018/12/24.
+  Copyright © 2018 LLS. All rights reserved.
+*/
+
+/* Response Error */
+
+"RussellError-Response-invalidStatus" = "服务内部错误 (%d)";
+
+/* Common Error */
+
+"RussellError-Common-serverInternalError" = "服务内部错误";
+"RussellError-Common-clientInternalError" = "服务内部错误";
+"RussellError-Common-networkError" = "网络错误";
+"RussellError-Common-sessionInvalidated" = "未知错误";
+"RussellError-Common-invalidLocalTime" = "请在 iOS 系统设置中校正自己的时间";
+"RussellError-Common-canceled" = "网络错误";
+"RussellError-Common-unknown" = "未知错误";
+"RussellError-Common-inappropriateUsage" = "未知错误";
+"RussellError-Common-notLoggedIn" = "请先登录";
+
+/* SMS Session Error */
+
+"RussellError-SMS-smsAlreadySent" = "短信验证码已发送，请 60 秒后再尝试重新发送";
+"RussellError-SMS-requiresSMSTooFrequently" = "今日请求短信验证码次数已达上限";
+"RussellError-SMS-invalidMobile" = "请输入正确的手机号码";
+"RussellError-SMS-invalidSMSCode" = "验证码错误";
+"RussellError-SMS-expiredSMSCode" = "该验证码已过期，请重新请求新的验证码";
+
+/* Email Session Error */
+
+"RussellError-Email-emailAlreadySent" = "邮箱验证码已发送，请 60 秒后再尝试重新发送";
+"RussellError-Email-requiresEmailTooFrequently" = "今日请求邮箱验证码次数已达上限";
+"RussellError-Email-invalidEmail" = "请输入正确的邮箱";
+"RussellError-Email-invalidEmailCode" = "验证码错误";
+"RussellError-Email-expiredEmailCode" = "该验证码已过期，请重新请求新的验证码";
+
+/* Login Session Error */
+
+"RussellError-LoginSession-userNotExist" = "该账户尚未注册，请先注册";
+"RussellError-LoginSession-blockedByPoolRule" = "服务内部错误";
+"RussellError-LoginSession-userAlreadyExists" = "该账户已注册，请直接登录";
+"RussellError-LoginSession-incorrectPassword" = "密码错误";
+"RussellError-LoginSession-captchaError" = "验证失败";
+
+/* Binding Error */
+
+"RussellError-Binding-notLoggedIn" = "请先登录";
+"RussellError-Binding-mobileAlreadyBound" = "该手机号已被绑定";
+"RussellError-Binding-oauthAlreadyBoundByOthers" = "该账号已被其他用户绑定";
+"RussellError-Binding-accountAlreadyBoundOAuth" = "您已绑定过该账号";
+"RussellError-Binding-emailAlreadyBound" = "该邮箱已被绑定";
+
+/* Set Password Error */
+
+"RussellError-SetPassword-passwordTooShort" = "密码需要 6 位以上";
+"RussellError-SetPassword-passwordInvalid" = "无效密码";
+
+/* Update Password Error */
+
+"RussellError-UpdatePassword-passwordTooShort" = "密码需要 6 位以上";
+"RussellError-UpdatePassword-notLoggedIn" = "请先登录";
+"RussellError-UpdatePassword-authorizationFailure" = "验证失败";
+"RussellError-UpdatePassword-passwordInvalid" = "无效密码";
+"RussellError-UpdatePassword-oldPasswordIncorrect" = "旧密码错误";
+"RussellError-UpdatePassword-operationTooFrequently" = "请求过于频繁";
+
+/* Real Name Verification */
+
+"RussellError-RealNameVerification-weekBindExceeded" = "手机号被绑定次数过多，请更换手机号重新绑定";
+"RussellError-RealNameVerification-sessionExpired" = "页面停留时间过长，请重新登录";
+"RussellError-RealNameVerification-pleaseUseMobileToLogin" = "该手机号已绑定其他账号，请使用该手机号登录。";
+"RussellError-RealNameVerification-canceled" = "已取消";

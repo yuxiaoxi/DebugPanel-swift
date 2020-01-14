@@ -1,0 +1,3 @@
+########### 主业务的URL mapping配置 ###########
+#配置格式：schemename:ViewController
+demoBViewController                   : ViewControllerB

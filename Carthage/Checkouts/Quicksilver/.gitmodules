@@ -1,0 +1,9 @@
+[submodule "Quicksilver/SubModule/LingoHTTPDNS"]
+	path = Quicksilver/SubModule/LingoHTTPDNS
+	url = git@git.llsapp.com:ios/lingo-http-dns.git
+[submodule "Quicksilver/SubModule/AFNetworking"]
+	path = Quicksilver/SubModule/AFNetworking
+	url = git@git.llsapp.com:ios/aid/afnetworking.git
+[submodule "Quicksilver/SubModule/Starscream"]
+	path = Quicksilver/SubModule/Starscream
+	url = git@git.llsapp.com:ios/aid/starscream.git

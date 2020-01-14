@@ -1,0 +1,8 @@
+{
+    "authenticationResult": {
+        "accessToken": "jwt",
+        "refreshToken": "refresh-token",
+        "expiresInSec": 7200,
+        "isNewRegister": false
+    }
+}

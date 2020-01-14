@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD0B1D892072362E00EC5329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B1D882072362E00EC5329 /* AppDelegate.swift */; };
+		BD0B1D8B2072362E00EC5329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B1D8A2072362E00EC5329 /* ViewController.swift */; };
+		BD0B1D8E2072362E00EC5329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0B1D8C2072362E00EC5329 /* Main.storyboard */; };
+		BD0B1D902072362E00EC5329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0B1D8F2072362E00EC5329 /* Assets.xcassets */; };
+		BD0B1D932072362E00EC5329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0B1D912072362E00EC5329 /* LaunchScreen.storyboard */; };
+		BD0B1D982072363700EC5329 /* LingoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD50DEC81F9485AA00474E3D /* LingoLog.framework */; };
+		BD0B1D992072363700EC5329 /* LingoLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD50DEC81F9485AA00474E3D /* LingoLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD2E7E8521E6F48900FF2A49 /* LogFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E7E8421E6F48900FF2A49 /* LogFormat.swift */; };
+		BD2E7E8921E842E800FF2A49 /* CrashCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E7E8821E842E800FF2A49 /* CrashCaptureService.swift */; };
+		BD2E7EA121E89F9300FF2A49 /* LoggerDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E7EA021E89F9300FF2A49 /* LoggerDeveloperViewController.swift */; };
+		BD2E7EA321E8A12300FF2A49 /* LingoLogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E7EA221E8A12300FF2A49 /* LingoLogPlugin.swift */; };
+		BD2E7EA721E8A36700FF2A49 /* LogInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E7EA621E8A36700FF2A49 /* LogInfo.swift */; };
+		BD50DED21F9485AA00474E3D /* LingoLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD50DEC81F9485AA00474E3D /* LingoLog.framework */; };
+		BD50DED91F9485AA00474E3D /* LingoLog.h in Headers */ = {isa = PBXBuildFile; fileRef = BD50DECB1F9485AA00474E3D /* LingoLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD50DEE31F94860200474E3D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEE21F94860200474E3D /* Logger.swift */; };
+		BD50DEE71F948A5A00474E3D /* LoggerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEE61F948A5A00474E3D /* LoggerTool.swift */; };
+		BD50DEE91F948A6400474E3D /* LoggerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEE81F948A6400474E3D /* LoggerService.swift */; };
+		BD50DEEB1F948A8800474E3D /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEEA1F948A8800474E3D /* LogLevel.swift */; };
+		BD50DEED1F948C3700474E3D /* LoggerDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEEC1F948C3700474E3D /* LoggerDestination.swift */; };
+		BD50DEEF1F948F5B00474E3D /* LoggerXcodeDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEEE1F948F5B00474E3D /* LoggerXcodeDestination.swift */; };
+		BD50DEF31F948FAB00474E3D /* LoggerFileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEF21F948FAB00474E3D /* LoggerFileDestination.swift */; };
+		BD50DEF71F948FDE00474E3D /* LogFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD50DEF61F948FDE00474E3D /* LogFilter.swift */; };
+		BD96EC441FA980CC00A351AD /* LoggerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EC431FA980CC00A351AD /* LoggerServiceTests.swift */; };
+		BD96EC541FA9F38900A351AD /* LogFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EC531FA9F38900A351AD /* LogFilterTests.swift */; };
+		BDD7C6072085D2BC00B66FBD /* LingoLogServer.cer in Resources */ = {isa = PBXBuildFile; fileRef = BDD7C6062085D2BC00B66FBD /* LingoLogServer.cer */; };
+		BDED65E021EDA729003B49AA /* LingoLogExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BDED65DE21EDA729003B49AA /* LingoLogExceptionHandler.h */; };
+		BDED65E221EDA729003B49AA /* LingoLogExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED65DF21EDA729003B49AA /* LingoLogExceptionHandler.m */; };
+		D85886F82140F4F600CD5275 /* MultipeerConnectivityConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85886F72140F4F600CD5275 /* MultipeerConnectivityConnectionManager.swift */; };
+		D883FE9020F741A300135A25 /* LiveLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883FE8F20F741A300135A25 /* LiveLogDestination.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD0B1D9A2072363700EC5329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD50DEBF1F9485AA00474E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD50DEC71F9485AA00474E3D;
+			remoteInfo = LingoLog;
+		};
+		BD50DED31F9485AA00474E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD50DEBF1F9485AA00474E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD50DEC71F9485AA00474E3D;
+			remoteInfo = LingoLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD0B1D9C2072363700EC5329 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD0B1D992072363700EC5329 /* LingoLog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD0B1D862072362E00EC5329 /* LingoLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingoLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0B1D882072362E00EC5329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD0B1D8A2072362E00EC5329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD0B1D8D2072362E00EC5329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD0B1D8F2072362E00EC5329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD0B1D922072362E00EC5329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD0B1D942072362E00EC5329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1F98A02084C3AB008F2291 /* LingoLog_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LingoLog_macOS.h; sourceTree = "<group>"; };
+		BD1F98A12084C3AB008F2291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD2E7E8421E6F48900FF2A49 /* LogFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFormat.swift; sourceTree = "<group>"; };
+		BD2E7E8821E842E800FF2A49 /* CrashCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashCaptureService.swift; sourceTree = "<group>"; };
+		BD2E7EA021E89F9300FF2A49 /* LoggerDeveloperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerDeveloperViewController.swift; sourceTree = "<group>"; };
+		BD2E7EA221E8A12300FF2A49 /* LingoLogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLogPlugin.swift; sourceTree = "<group>"; };
+		BD2E7EA621E8A36700FF2A49 /* LogInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInfo.swift; sourceTree = "<group>"; };
+		BD35E6F221F59B5600F5E88A /* AWSS3Uploader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3Uploader.framework; path = ../../LingoNewDarwin/Carthage/Build/iOS/AWSS3Uploader.framework; sourceTree = "<group>"; };
+		BD35E6F321F59B5600F5E88A /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = ../../LingoNewDarwin/Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
+		BD35E6FA21F5C7E400F5E88A /* AWSS3Uploader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3Uploader.framework; path = Carthage/Build/iOS/AWSS3Uploader.framework; sourceTree = "<group>"; };
+		BD35E6FB21F5C7E400F5E88A /* ZipArchive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZipArchive.framework; path = Carthage/Build/iOS/ZipArchive.framework; sourceTree = "<group>"; };
+		BD50DEC81F9485AA00474E3D /* LingoLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LingoLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD50DECB1F9485AA00474E3D /* LingoLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LingoLog.h; sourceTree = "<group>"; };
+		BD50DECC1F9485AA00474E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD50DED11F9485AA00474E3D /* LingoLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingoLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD50DED81F9485AA00474E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD50DEE21F94860200474E3D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BD50DEE61F948A5A00474E3D /* LoggerTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerTool.swift; sourceTree = "<group>"; };
+		BD50DEE81F948A6400474E3D /* LoggerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerService.swift; sourceTree = "<group>"; };
+		BD50DEEA1F948A8800474E3D /* LogLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		BD50DEEC1F948C3700474E3D /* LoggerDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDestination.swift; sourceTree = "<group>"; };
+		BD50DEEE1F948F5B00474E3D /* LoggerXcodeDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerXcodeDestination.swift; sourceTree = "<group>"; };
+		BD50DEF21F948FAB00474E3D /* LoggerFileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerFileDestination.swift; sourceTree = "<group>"; };
+		BD50DEF61F948FDE00474E3D /* LogFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFilter.swift; sourceTree = "<group>"; };
+		BD96EC431FA980CC00A351AD /* LoggerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerServiceTests.swift; sourceTree = "<group>"; };
+		BD96EC531FA9F38900A351AD /* LogFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFilterTests.swift; sourceTree = "<group>"; };
+		BDD7C6062085D2BC00B66FBD /* LingoLogServer.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = LingoLogServer.cer; sourceTree = "<group>"; };
+		BDDAF3012329F23C003EE068 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		BDED65DE21EDA729003B49AA /* LingoLogExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LingoLogExceptionHandler.h; sourceTree = "<group>"; };
+		BDED65DF21EDA729003B49AA /* LingoLogExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LingoLogExceptionHandler.m; sourceTree = "<group>"; };
+		D85886F72140F4F600CD5275 /* MultipeerConnectivityConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerConnectivityConnectionManager.swift; sourceTree = "<group>"; };
+		D883FE8F20F741A300135A25 /* LiveLogDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLogDestination.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD0B1D832072362E00EC5329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0B1D982072363700EC5329 /* LingoLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DEC41F9485AA00474E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DECE1F9485AA00474E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD50DED21F9485AA00474E3D /* LingoLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD0B1D872072362E00EC5329 /* LingoLogDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BD0B1D882072362E00EC5329 /* AppDelegate.swift */,
+				BD0B1D8A2072362E00EC5329 /* ViewController.swift */,
+				BD0B1D8C2072362E00EC5329 /* Main.storyboard */,
+				BD0B1D8F2072362E00EC5329 /* Assets.xcassets */,
+				BD0B1D912072362E00EC5329 /* LaunchScreen.storyboard */,
+				BD0B1D942072362E00EC5329 /* Info.plist */,
+			);
+			path = LingoLogDemo;
+			sourceTree = "<group>";
+		};
+		BD1F980220847605008F2291 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				BD50DEEC1F948C3700474E3D /* LoggerDestination.swift */,
+				BDD7C60220859ACB00B66FBD /* LoggerFile */,
+				BDD7C60120859AC100B66FBD /* LoggerXcode */,
+				D883FE8E20F7418A00135A25 /* LiveLog */,
+			);
+			path = Destination;
+			sourceTree = "<group>";
+		};
+		BD1F980320847611008F2291 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD50DEEA1F948A8800474E3D /* LogLevel.swift */,
+				BD50DEF61F948FDE00474E3D /* LogFilter.swift */,
+				BD2E7E8421E6F48900FF2A49 /* LogFormat.swift */,
+				BD2E7EA621E8A36700FF2A49 /* LogInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD1F980420847632008F2291 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BD50DEE81F948A6400474E3D /* LoggerService.swift */,
+				BD2E7E8821E842E800FF2A49 /* CrashCaptureService.swift */,
+				BDED65DE21EDA729003B49AA /* LingoLogExceptionHandler.h */,
+				BDED65DF21EDA729003B49AA /* LingoLogExceptionHandler.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BD1F989F2084C3AB008F2291 /* LingoLog_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F98A02084C3AB008F2291 /* LingoLog_macOS.h */,
+				BD1F98A12084C3AB008F2291 /* Info.plist */,
+			);
+			path = LingoLog_macOS;
+			sourceTree = "<group>";
+		};
+		BD35E6F121F59B5500F5E88A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD35E6FA21F5C7E400F5E88A /* AWSS3Uploader.framework */,
+				BD35E6FB21F5C7E400F5E88A /* ZipArchive.framework */,
+				BD35E6F221F59B5600F5E88A /* AWSS3Uploader.framework */,
+				BD35E6F321F59B5600F5E88A /* ZipArchive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD50DEBE1F9485AA00474E3D = {
+			isa = PBXGroup;
+			children = (
+				BD50DECA1F9485AA00474E3D /* LingoLog */,
+				BD50DED51F9485AA00474E3D /* LingoLogTests */,
+				BD0B1D872072362E00EC5329 /* LingoLogDemo */,
+				BD1F989F2084C3AB008F2291 /* LingoLog_macOS */,
+				BD50DEC91F9485AA00474E3D /* Products */,
+				BD35E6F121F59B5500F5E88A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD50DEC91F9485AA00474E3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD50DEC81F9485AA00474E3D /* LingoLog.framework */,
+				BD50DED11F9485AA00474E3D /* LingoLogTests.xctest */,
+				BD0B1D862072362E00EC5329 /* LingoLogDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD50DECA1F9485AA00474E3D /* LingoLog */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F980420847632008F2291 /* Service */,
+				BD1F980320847611008F2291 /* Model */,
+				BD1F980220847605008F2291 /* Destination */,
+				BD50DECB1F9485AA00474E3D /* LingoLog.h */,
+				BD50DEE21F94860200474E3D /* Logger.swift */,
+				BD50DEE61F948A5A00474E3D /* LoggerTool.swift */,
+				BD2E7EA221E8A12300FF2A49 /* LingoLogPlugin.swift */,
+				BDD7C6062085D2BC00B66FBD /* LingoLogServer.cer */,
+				BD50DECC1F9485AA00474E3D /* Info.plist */,
+				BDDAF3012329F23C003EE068 /* module.modulemap */,
+			);
+			path = LingoLog;
+			sourceTree = "<group>";
+		};
+		BD50DED51F9485AA00474E3D /* LingoLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD96EC431FA980CC00A351AD /* LoggerServiceTests.swift */,
+				BD96EC531FA9F38900A351AD /* LogFilterTests.swift */,
+				BD50DED81F9485AA00474E3D /* Info.plist */,
+			);
+			path = LingoLogTests;
+			sourceTree = "<group>";
+		};
+		BDD7C60120859AC100B66FBD /* LoggerXcode */ = {
+			isa = PBXGroup;
+			children = (
+				BD50DEEE1F948F5B00474E3D /* LoggerXcodeDestination.swift */,
+			);
+			path = LoggerXcode;
+			sourceTree = "<group>";
+		};
+		BDD7C60220859ACB00B66FBD /* LoggerFile */ = {
+			isa = PBXGroup;
+			children = (
+				BD2E7EA021E89F9300FF2A49 /* LoggerDeveloperViewController.swift */,
+				BD50DEF21F948FAB00474E3D /* LoggerFileDestination.swift */,
+			);
+			path = LoggerFile;
+			sourceTree = "<group>";
+		};
+		D85886F62140F4D100CD5275 /* MultipeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				D85886F72140F4F600CD5275 /* MultipeerConnectivityConnectionManager.swift */,
+			);
+			path = MultipeerConnectivity;
+			sourceTree = "<group>";
+		};
+		D883FE8E20F7418A00135A25 /* LiveLog */ = {
+			isa = PBXGroup;
+			children = (
+				D85886F62140F4D100CD5275 /* MultipeerConnectivity */,
+				D883FE8F20F741A300135A25 /* LiveLogDestination.swift */,
+			);
+			path = LiveLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BD50DEC51F9485AA00474E3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD50DED91F9485AA00474E3D /* LingoLog.h in Headers */,
+				BDED65E021EDA729003B49AA /* LingoLogExceptionHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BD0B1D852072362E00EC5329 /* LingoLogDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0B1D952072362E00EC5329 /* Build configuration list for PBXNativeTarget "LingoLogDemo" */;
+			buildPhases = (
+				BD0B1D822072362E00EC5329 /* Sources */,
+				BD0B1D832072362E00EC5329 /* Frameworks */,
+				BD0B1D842072362E00EC5329 /* Resources */,
+				BD0B1D9C2072363700EC5329 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD0B1D9B2072363700EC5329 /* PBXTargetDependency */,
+			);
+			name = LingoLogDemo;
+			productName = LingoLogDemo;
+			productReference = BD0B1D862072362E00EC5329 /* LingoLogDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD50DEC71F9485AA00474E3D /* LingoLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD50DEDC1F9485AA00474E3D /* Build configuration list for PBXNativeTarget "LingoLog" */;
+			buildPhases = (
+				BD50DEC31F9485AA00474E3D /* Sources */,
+				BD50DEC41F9485AA00474E3D /* Frameworks */,
+				BD50DEC51F9485AA00474E3D /* Headers */,
+				BD50DEC61F9485AA00474E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LingoLog;
+			productName = LingoLog;
+			productReference = BD50DEC81F9485AA00474E3D /* LingoLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD50DED01F9485AA00474E3D /* LingoLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD50DEDF1F9485AA00474E3D /* Build configuration list for PBXNativeTarget "LingoLogTests" */;
+			buildPhases = (
+				BD50DECD1F9485AA00474E3D /* Sources */,
+				BD50DECE1F9485AA00474E3D /* Frameworks */,
+				BD50DECF1F9485AA00474E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD50DED41F9485AA00474E3D /* PBXTargetDependency */,
+			);
+			name = LingoLogTests;
+			productName = LingoLogTests;
+			productReference = BD50DED11F9485AA00474E3D /* LingoLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD50DEBF1F9485AA00474E3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "LLS iOS Team";
+				TargetAttributes = {
+					BD0B1D852072362E00EC5329 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BD50DEC71F9485AA00474E3D = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					BD50DED01F9485AA00474E3D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD50DEC21F9485AA00474E3D /* Build configuration list for PBXProject "LingoLog" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD50DEBE1F9485AA00474E3D;
+			productRefGroup = BD50DEC91F9485AA00474E3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD50DEC71F9485AA00474E3D /* LingoLog */,
+				BD50DED01F9485AA00474E3D /* LingoLogTests */,
+				BD0B1D852072362E00EC5329 /* LingoLogDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD0B1D842072362E00EC5329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0B1D932072362E00EC5329 /* LaunchScreen.storyboard in Resources */,
+				BD0B1D902072362E00EC5329 /* Assets.xcassets in Resources */,
+				BD0B1D8E2072362E00EC5329 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DEC61F9485AA00474E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD7C6072085D2BC00B66FBD /* LingoLogServer.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DECF1F9485AA00474E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD0B1D822072362E00EC5329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0B1D8B2072362E00EC5329 /* ViewController.swift in Sources */,
+				BD0B1D892072362E00EC5329 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DEC31F9485AA00474E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85886F82140F4F600CD5275 /* MultipeerConnectivityConnectionManager.swift in Sources */,
+				BD50DEED1F948C3700474E3D /* LoggerDestination.swift in Sources */,
+				BD2E7EA121E89F9300FF2A49 /* LoggerDeveloperViewController.swift in Sources */,
+				BD2E7EA721E8A36700FF2A49 /* LogInfo.swift in Sources */,
+				BD50DEE31F94860200474E3D /* Logger.swift in Sources */,
+				BD50DEE71F948A5A00474E3D /* LoggerTool.swift in Sources */,
+				BD2E7E8921E842E800FF2A49 /* CrashCaptureService.swift in Sources */,
+				BD50DEEB1F948A8800474E3D /* LogLevel.swift in Sources */,
+				BD50DEE91F948A6400474E3D /* LoggerService.swift in Sources */,
+				BD50DEF31F948FAB00474E3D /* LoggerFileDestination.swift in Sources */,
+				BD2E7EA321E8A12300FF2A49 /* LingoLogPlugin.swift in Sources */,
+				BDED65E221EDA729003B49AA /* LingoLogExceptionHandler.m in Sources */,
+				BD50DEF71F948FDE00474E3D /* LogFilter.swift in Sources */,
+				D883FE9020F741A300135A25 /* LiveLogDestination.swift in Sources */,
+				BD2E7E8521E6F48900FF2A49 /* LogFormat.swift in Sources */,
+				BD50DEEF1F948F5B00474E3D /* LoggerXcodeDestination.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD50DECD1F9485AA00474E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD96EC441FA980CC00A351AD /* LoggerServiceTests.swift in Sources */,
+				BD96EC541FA9F38900A351AD /* LogFilterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD0B1D9B2072363700EC5329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD50DEC71F9485AA00474E3D /* LingoLog */;
+			targetProxy = BD0B1D9A2072363700EC5329 /* PBXContainerItemProxy */;
+		};
+		BD50DED41F9485AA00474E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD50DEC71F9485AA00474E3D /* LingoLog */;
+			targetProxy = BD50DED31F9485AA00474E3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD0B1D8C2072362E00EC5329 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD0B1D8D2072362E00EC5329 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD0B1D912072362E00EC5329 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD0B1D922072362E00EC5329 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD0B1D962072362E00EC5329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				FRAMEWORK_SEARCH_PATHS = (
+					$PROJECT_DIR/Carthage/Build/iOS/,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LingoLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD0B1D972072362E00EC5329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				FRAMEWORK_SEARCH_PATHS = (
+					$PROJECT_DIR/Carthage/Build/iOS/,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = LingoLogDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD50DEDA1F9485AA00474E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD50DEDB1F9485AA00474E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD50DEDD1F9485AA00474E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LingoLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/LingoLog/;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD50DEDE1F9485AA00474E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LingoLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/LingoLog/;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD50DEE01F9485AA00474E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				INFOPLIST_FILE = LingoLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "./SubModule/**";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD50DEE11F9485AA00474E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
+				INFOPLIST_FILE = LingoLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liulishuo.LingoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "./SubModule/**";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD0B1D952072362E00EC5329 /* Build configuration list for PBXNativeTarget "LingoLogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0B1D962072362E00EC5329 /* Debug */,
+				BD0B1D972072362E00EC5329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD50DEC21F9485AA00474E3D /* Build configuration list for PBXProject "LingoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD50DEDA1F9485AA00474E3D /* Debug */,
+				BD50DEDB1F9485AA00474E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD50DEDC1F9485AA00474E3D /* Build configuration list for PBXNativeTarget "LingoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD50DEDD1F9485AA00474E3D /* Debug */,
+				BD50DEDE1F9485AA00474E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD50DEDF1F9485AA00474E3D /* Build configuration list for PBXNativeTarget "LingoLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD50DEE01F9485AA00474E3D /* Debug */,
+				BD50DEE11F9485AA00474E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD50DEBF1F9485AA00474E3D /* Project object */;
+}

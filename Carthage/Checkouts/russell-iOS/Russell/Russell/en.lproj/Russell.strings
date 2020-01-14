@@ -1,0 +1,76 @@
+/* 
+  Russell.strings
+  Russell
+
+  Created by Yunfan Cui on 2018/12/24.
+  Copyright © 2018 LLS. All rights reserved.
+*/
+
+/* Response Error */
+
+"RussellError-Response-invalidStatus" = "Service Internal Error (%d)";
+
+/* Common Error */
+
+"RussellError-Common-serverInternalError" = "Service Internal Error";
+"RussellError-Common-clientInternalError" = "Service Internal Error";
+"RussellError-Common-networkError" = "Network error";
+"RussellError-Common-sessionInvalidated" = "Unknown Error";
+"RussellError-Common-invalidLocalTime" = "Please check the time settings in your iOS system preference.";
+"RussellError-Common-canceled" = "Network error";
+"RussellError-Common-unknown" = "Service Internal Error";
+"RussellError-Common-inappropriateUsage" = "Service Internal Error";
+"RussellError-Common-notLoggedIn" = "Please log in first";
+
+/* SMS Session Error */
+
+"RussellError-SMS-smsAlreadySent" = "SMS has already been sent, please wait for 60 seconds, and try again if not received.";
+"RussellError-SMS-requiresSMSTooFrequently" = "You are trying to get SMS code too many times today.";
+"RussellError-SMS-invalidMobile" = "Please enter correct mobile";
+"RussellError-SMS-invalidSMSCode" = "Incorrect SMS Code";
+"RussellError-SMS-expiredSMSCode" = "SMS Code is expired, please try to get a new one.";
+
+/* Email Session Error */
+
+"RussellError-Email-emailAlreadySent" = "Email has already been sent, please wait for 60 seconds, and try again if not received.";
+"RussellError-Email-requiresEmailTooFrequently" = "You are trying to get Email code too many times today.";
+"RussellError-Email-invalidEmail" = "Please enter correct email address.";
+"RussellError-Email-invalidEmailCode" = "Incorrect Email Code";
+"RussellError-Email-expiredEmailCode" = "Email Code is expired, please try to get a new one.";
+
+/* Login Session Error */
+
+"RussellError-LoginSession-userNotExist" = "Account not registered yet.";
+"RussellError-LoginSession-blockedByPoolRule" = "Service Internal Error";
+"RussellError-LoginSession-userAlreadyExists" = "Your account already exists, please login directly.";
+"RussellError-LoginSession-incorrectPassword" = "Incorrect password";
+"RussellError-LoginSession-captchaError" = "Captcha Verification failed";
+
+/* Binding Error */
+
+"RussellError-Binding-notLoggedIn" = "Please log in at first";
+"RussellError-Binding-mobileAlreadyBound" = "This mobile has already been bound.";
+"RussellError-Binding-oauthAlreadyBoundByOthers" = "This account has already been bound by other users.";
+"RussellError-Binding-accountAlreadyBoundOAuth" = "You have already bound this account.";
+"RussellError-Binding-emailAlreadyBound" = "This email has already been bound.";
+
+/* Set Password Error */
+
+"RussellError-SetPassword-passwordTooShort" = "The password should contain more than 6 characters";
+"RussellError-SetPassword-passwordInvalid" = "Invalid password";
+
+/* Update Password Error */
+
+"RussellError-UpdatePassword-passwordTooShort" = "The password should contain more than 6 characters";
+"RussellError-UpdatePassword-notLoggedIn" = "Please log in at first";
+"RussellError-UpdatePassword-authorizationFailure" = "Unauthorized";
+"RussellError-UpdatePassword-passwordInvalid" = "Invalid password";
+"RussellError-UpdatePassword-oldPasswordIncorrect" = "Incorrect original password";
+"RussellError-UpdatePassword-operationTooFrequently" = "Too frequent";
+
+/* Real Name Verification */
+
+"RussellError-RealNameVerification-weekBindExceeded" = "This mobile has been bound to too many accounts. Please use another one.";
+"RussellError-RealNameVerification-sessionExpired" = "Please login again";
+"RussellError-RealNameVerification-pleaseUseMobileToLogin" = "This mobile has been bound to another account, please login via mobile";
+"RussellError-RealNameVerification-canceled" = "Canceled";
